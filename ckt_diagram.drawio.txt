@@ -1,0 +1,35 @@
+                    SENSOR NODE
+
+   Soil Moisture Sensor
+            │
+            ▼
+        ESP32 #1
+            │
+      SPI Interface
+            │
+        SX1278 LoRa
+            │
+      ~ LoRa Link ~
+            │
+            ▼
+
+
+                    GATEWAY NODE
+
+        SX1278 LoRa
+            │
+      SPI Interface
+            │
+        ESP32 #2
+            │
+      UART Interface
+            │
+        5G Modem
+            │
+        Internet
+            │
+            ▼
+       Cloud Server
+            │
+            ▼
+    Mobile/Web Dashboard
